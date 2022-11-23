@@ -2,7 +2,7 @@
 Author: Sahel Reja
 Course: CSCI-135
 Instructor: Sadab Hafiz
-Assignment: Lab Quiz #10
+Assignment: Lab Quiz #11
 The purpose of this program is to see if timeslots overlap.
 */
 class Money {
