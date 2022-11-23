@@ -48,9 +48,6 @@ Account::Account(std::string first, std::string last, std::string p) {
     if(!setPin(p)) {
         pin = "0000";
     }
-    else {
-        setPin(p);
-    }
     accountNumber = generateAccountNumber();
     accountBalance = 0;
 }

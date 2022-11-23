@@ -1,3 +1,10 @@
+/*
+Author: Sahel Reja
+Course: CSCI-135
+Instructor: Genady Maryash
+Assignment: Project 3B
+The purpose of this program is define a class called Bank with the corresponding members that is a a superset of the Account class.
+*/
 #include "Account.hpp"
 #include <string>
 #ifndef BANK_HPP

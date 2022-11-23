@@ -6,8 +6,7 @@ Instructor: Genady Maryash
 Assignment: Project 3A
 The purpose of this program is define a class called Account with public and private members.
 */
-#ifndef ACCOUNT_HPP
-#define ACCOUNT_HPP
+#pragma once
 #include <string>
 #include <iostream>
 class Account {
@@ -31,4 +30,3 @@ class Account {
     int getBalance() const;
     bool transaction(int deposit);
 };
-#endif
