@@ -117,10 +117,13 @@ public:
     if(user_id == -1) {
         return false;
     }
-    std::string full = profiles[user_id].getFullName();
-    for(int i = 0; i < numPosts; i++) {
-        if(posts[i].username == usrn) {
-            std::cout << full << ": " << posts[i].message << std::endl;
+    for(int i = numPosts; i >= 0; i--) {
+        Post p = posts[i];
+        int follower_id = findID(p.username);
+        if(p.username == usrn) {
+            std::cout << profiles[user_id].getFullName() << ": " << p.message << endl;
+        } else if(following[user_id][follower_id]) {
+            std::cout << profiles[follower_id].getFullName() << ": " << p.message << endl;
         }
     }
     return true;
